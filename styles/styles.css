@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&display=swap');
+/* 
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+@media only screen and (min-width: 992px) {
+    .form-holder {
+        padding-left: 70px;
+        padding-top: 50px;
+    }
+
+    #password {
+        width: 93% !important;
+    }
+
+    #left-text {
+        display: inline-block !important;
+    }
+}
+
+:root {
+    --gs-red: #e7230d;
+    --gs-white: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: var(--gs-white) !important;
+    filter: drop-shadow(0px -20px 15px black);
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.form-holder {
+    margin-top: 10px;
+}
+
+#logo {
+    width: 80% !important;
+}
+
+.text {
+    text-indent: 10px;
+    height: 55px !important;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#fname,
+#lname {
+    width: 100%;
+}
+
+#password {
+    width: 87%;
+}
+
+#reveal {
+    position: relative;
+    width: 40px;
+    height: 55px;
+}
+
+.phone {
+    margin-top: 0px !important;
+}
+
+.signed-in {
+    margin-top: 30px;
+    margin-left: 5px;
+    transform: scale(1.4);
+}
+
+#keep-me {
+    text-indent: 5px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gs-red);
+    color: white;
+    padding: 13px;
+    border: 0px;
+    width: 100%;
+}

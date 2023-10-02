@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./styles/imgs/logo-gs-mono.svg" class="img-fluid" id="logo"></a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-holder">
+                    <h4 style="font-size: 20px;"><strong>Create Account</strong></h4>
+                    <p>Create your GameStop account, then join Pro to start earning points and rewards today!</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="radio" id="newacc" value="newacc" name="member" checked> <label for="newacc" style="font-size: 14.5px; text-indent: 10px;">New Account</label>
+                                <p class="ms-4" style="font-size: 11px;">Create an account and enjoy all the GameStop benefits.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="radio" id="actmember" value="actmember" name="member"> <label for="newacc" style="font-size: 14.5px; text-indent: 10px;">Active Membership</label>
+                                <p class="ms-4" style="font-size: 11px;">If you signed up in a store, activate your membership in 3 steps.</p>
+                            </div>
+                            <div class="col-md-6 newacc">
+                                <input class="text"  type="text" id="fname" name="fname" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6 newacc">
+                                <input class="text" type="text" id="lname" name="lname" placeholder="Last Name" required>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="actmember" style="position: relative; top: 10px;font-size: 14px; margin-bottom: 0px; display: none;">Please enter the email address you used to sign up at the store.</p>
+                                <input class="text" type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-12 newacc">
+                                <input class="text" type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
+                                <span class="input-group-btn">
+                                    <button id="reveal" class="btn btn-default reveal" onclick="revealPassword()" type="button"><i class="bi-eye-fill"></i></button>
+                                </span>
+                                <p style="font-size: 12px; padding-left: 15px; padding-right: 20px;">Use 8 or more characters with a mix of uppercase and lowercase letters, numbers & symbols (!@#$%)</p>
+                            </div>
+                            <div class="col-md-12 newacc">
+                                <input class="text phone" type="number" id="phone" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-12 newacc">
+                                <input class="signed-in" type="checkbox" id="signed-in" name="signed-in" value="signed-in"> <label id="keep-me" for="signed-in">Keep me signed in</label>
+                                <p style="font-size: 12px; padding-left: 28px; padding-right: 30px;">You won't have to sign in as often on this device, only check this box on personal devices.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="submit mt-3" type="submit" value="submit">SUBMIT</button>
+                            </div>
+                            <p style="text-align: center; padding-top: 15px;">OR</p>
+                            <div class="col-md-12">
+                                <button class="reset" type="reset" value="reset">RESET</button>
+                            </div>
+                        </div>
+                    </form>
+                    <br><br><br>
+                    <p class="actmember" style="display: none;">
+                        <br><br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6" id="left-text" style="background-color: black; display: none; padding-left: 60px; padding-top: 50px;">
+                <h2 class="text-white" id="left-header" style="font-size: 22px;">Sign up for your FREE GameStop<br>account and enjoy these benefits:</h2>
+                <p id="left-p">PLACEHOLDER</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src='./scripts/scripts.js'></script>
+</body>
+</html>
