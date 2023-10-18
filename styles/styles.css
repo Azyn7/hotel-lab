@@ -95,3 +95,24 @@ button {
     border: 0px;
     width: 100%;
 }
+
+.arrow-right {
+    background: #fff;
+    border-radius: 0.25rem;
+    height: 70px;
+    position: absolute;
+    top: 10rem;
+    right: 58.25rem;
+    transform: rotate(45deg);
+    width: 96px;
+}
+
+.small-form {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+#left-text p {
+    color: white;
+}
