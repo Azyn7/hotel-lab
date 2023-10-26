@@ -26,6 +26,16 @@ $('document').ready(function(){
     }
 
     /**
+     * [Script to load info into boxes]
+     */
+    $("#load-values").click(function() {
+        (document.getElementById("fname")).value = "John";
+        (document.getElementById("lname")).value = "Smith";
+        (document.getElementById("email")).value ="johnsmith@email.com";
+        (document.getElementById("phone")).value = "2561231234";
+    });
+
+    /**
      * [Script to check which radio button is clicked, "New Account" or "Active Membership"]
      * [Changes site based on the radio selected.]
      */
@@ -36,6 +46,8 @@ $('document').ready(function(){
         if (activeOrNew === "actmember") {
             $('.newacc').hide();
             $('.actmember').show();
+            $('#load-values').hide();
+            $("#submit").addClass("mb-2");
             $('#left-header').html("Thanks for enrolling your GameStop account. Continue with verification.");
             document.getElementById("fname").required = false;
             document.getElementById("lname").required = false;
@@ -44,6 +56,8 @@ $('document').ready(function(){
         } else {
             $('.newacc').show();
             $('.actmember').hide();
+            $('#load-values').show();
+            $("#submit").removeClass("mb-2");
             $('#left-header').html("Sign up for your FREE GameStop account and enjoy these benefits:");
             document.getElementById("fname").required = true;
             document.getElementById("lname").required = true;
